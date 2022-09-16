@@ -578,8 +578,7 @@ class Swiper extends Component {
   }
 
   calculateNextPreviousCardPosition = () => {
-    const { swipeBackXYPositions } 
-    
+    const { swipeBackXYPositions } = this.state
     let { previousCardDefaultPositionX: x, previousCardDefaultPositionY: y } = this.props
     const swipeBackPosition = swipeBackXYPositions.splice(-1, 1)
     if (swipeBackPosition[0]) {
